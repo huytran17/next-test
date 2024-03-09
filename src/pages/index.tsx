@@ -17,6 +17,8 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <Link href="test">Test</Link>
+        <br />
+        <Link href="timer">Timer</Link>
 
         <div className={styles.description}>
           <p>

@@ -14,22 +14,22 @@ export function getStaticPaths() {
   };
 }
 
-export const getStaticProps = (() => {
-  console.log("1------------getStaticProps");
+export const getStaticProps = ((context) => {
+  console.log("1------------getStaticProps", context);
 
   return {
-    props: { a: 1010101 },
+    props: { id: context?.params?.id as string },
   };
-}) satisfies GetStaticProps<{ a: number }>;
+}) satisfies GetStaticProps<{ id: string }>;
 
 export default function TestDetails({
-  a,
+  id,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const router = useRouter();
 
   return (
     <div>
-      Test detail id: {router.query.id} and a is {a}
+      Test detail id: {router.query.id} and {id}
     </div>
   );
 }
