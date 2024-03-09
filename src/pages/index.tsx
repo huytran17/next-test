@@ -16,10 +16,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <Link href="test">Test</Link>
+        <Link href="/test">Test</Link>
         <br />
-        <Link href="timer">Timer</Link>
-
+        <Link href="/timer">Timer</Link>
+        <br />
+        <Link href="/test-api/hello">Api test: hello</Link>
+        <br />
+        <Link href="/test-api/world">Api test: world</Link>
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
