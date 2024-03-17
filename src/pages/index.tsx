@@ -23,6 +23,10 @@ export default function Home() {
         <Link href="/test-api/hello">Api test: hello</Link>
         <br />
         <Link href="/test-api/world">Api test: world</Link>
+        <br />
+        <Link href="/test-middleware/test1">Test middleware: Test 1</Link>
+        <br />
+        <Link href="/test-2">Test 2</Link>
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
